@@ -13,7 +13,7 @@ export default function App() {
         <ImageViewer placeholderImageSource={PlaceholderImage} />
       </View>
       <View style={styles.footerContainer}>
-        <Button label="Choose a  photo"/>
+        <Button theme="primary" label="Choose a  photo"/>
         <Button label="Use this photo"/>
       </View>
       <Text style={{color: '#fff'}}>Open up App.js to start working on your app!</Text>
