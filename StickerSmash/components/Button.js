@@ -3,7 +3,8 @@ import { FontAwesome } from '@expo/vector-icons';
 
 export default function Button({label, theme, onPress}) {
     if (theme === 'primary') {
-       return ( <View
+       return ( 
+       <View
         style={[styles.buttonContainer, {
             borderWidth: 4,
             borderColor: "#ffd33d",
@@ -28,7 +29,7 @@ export default function Button({label, theme, onPress}) {
     
     return (
         <View style={styles.buttonContainer}>
-            <Pressable style={styles.button} onPress={() => alert('You pressed a button.')}>
+            <Pressable style={styles.button} onPress={onPress}>
                 <Text style={styles.buttonLabel}>{label}</Text>
             </Pressable>
         </View>
